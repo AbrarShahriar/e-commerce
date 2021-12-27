@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="container">
+        <div class="cir cir-1"></div>
+        <div class="cir cir-2"></div>
+        <div class="cir cir-3"></div>
+        <div class="cir cir-4"></div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <h1>E-Commerce</h1>
+        <div class="nav">
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" />
+          </div>
+          <i class="fa fa-user-circle-o user-icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <h1 class="product_category">All Products</h1>
+      <div class="filter">
+        <!--by category-->
+        <select class="filter_category">
+          <option value="all">All</option>
+        </select>
+
+        <!--by price-->
+        <div class="filter_price">
+          <span>Price: </span>
+          <input type="number" name="min" id="min" placeholder="min" />
+          <input type="number" name="max" id="max" placeholder="max" />
+        </div>
+
+        <!--by rating-->
+        <div class="filter_rating">
+          <span>Rating: </span>
+          <select class="rating">
+            <option value="all">All</option>
+            <option value="4.5">> 4.5</option>
+            <option value="4.0">> 4.0</option>
+            <option value="3.5">> 3.5</option>
+            <option value="3.0">> 3.0</option>
+            <option value="2.5">> 2.5</option>
+          </select>
+        </div>
+
+        <button class="btn_apply">Apply</button>
+      </div>
+
+      <!-- PRODUCTS + CART -->
+      <div class="products__cart">
+        <!-- PRODUCTS -->
+        <div class="products"></div>
+
+        <!-- CART -->
+        <div class="cart">
+          <div class="cart_header">
+            <div class="total_number">
+              <i class="fa fa-shopping-cart"></i>
+              <span>0</span>
+            </div>
+            <div class="total">
+              <strong>Total: </strong>
+              <span>0$</span>
+            </div>
+          </div>
+          <div class="cart_body">
+            <!-- CART -->
+            <div class="cart_items">Cart is empty</div>
+          </div>
+          <div class="cart_footer">
+            <button class="btn_checkout">
+              Checkout <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
